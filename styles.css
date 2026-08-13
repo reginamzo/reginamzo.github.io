@@ -628,7 +628,7 @@
     align-items: baseline;
   }
   footer .mono { font-size: 0.78rem; color: var(--ink-soft); letter-spacing: 0.04em; }
-  footer a.email {
+  footer a.email, footer a.cv-link {
     font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
     font-size: 0.74rem;
     letter-spacing: 0.06em;
@@ -638,7 +638,8 @@
     color: var(--ink);
     transition: border-color 0.2s ease, color 0.2s ease, background 0.2s ease;
   }
-  footer a.email:hover, footer a.email:focus-visible {
+  footer a.email:hover, footer a.email:focus-visible,
+  footer a.cv-link:hover, footer a.cv-link:focus-visible {
     border-color: var(--ink);
     background: var(--ink);
     color: var(--ground);
