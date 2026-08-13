@@ -822,3 +822,12 @@
     .cursor-dot.hover-dark { background: #3d1216; }
     .cursor-ring.hover-dark { border-color: #3d1216; }
   }
+
+  /* ---- print (site-wide: PDF export of any page keeps content visible + real links) ---- */
+  @media print {
+    .reveal { opacity: 1 !important; transform: none !important; }
+    .nav-toggle { display: none !important; }
+    .nav-links { display: flex !important; position: static !important; flex-wrap: wrap !important; }
+    .cursor-dot, .cursor-ring { display: none !important; }
+    .hero { min-height: auto !important; }
+  }
