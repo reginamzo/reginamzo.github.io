@@ -147,6 +147,12 @@
   .nav-toggle { display: none; }
   @media (max-width: 720px) {
     nav { position: relative; flex-wrap: nowrap; }
+    .nav-name { font-size: 0; }
+    .nav-name::before {
+      content: attr(data-short);
+      font-size: 0.78rem;
+      letter-spacing: 0.08em;
+    }
     .nav-toggle {
       display: flex;
       flex-direction: column;
@@ -724,7 +730,7 @@
     border: 1px solid var(--ink);
     border-radius: 0;
     overflow: hidden;
-    transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease, color 0.25s ease;
+    transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease, color 0.25s ease, opacity 0.7s ease;
   }
   .project-card:hover, .project-card:focus-visible {
     transform: translateY(-4px);
