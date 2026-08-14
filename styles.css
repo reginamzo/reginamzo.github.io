@@ -838,7 +838,7 @@
     .nav-name::before { content: none !important; }
     .cursor-dot, .cursor-ring { display: none !important; }
     .hero { min-height: auto !important; }
-    .project-card, .figure, .specsheet, .row-2, .trayectoria-collage {
+    .project-card, .figure, .specsheet, .row-2 {
       break-inside: avoid !important;
       page-break-inside: avoid !important;
     }
