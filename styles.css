@@ -120,7 +120,10 @@
     letter-spacing: 0.08em;
     text-transform: uppercase;
     font-weight: 600;
+    color: inherit;
+    text-decoration: none;
   }
+  .nav-name:hover, .nav-name:focus-visible { color: var(--ink-soft); }
   .nav-links { display: flex; gap: 0.5rem; flex-wrap: wrap; justify-content: flex-end; }
   .nav-toggle { display: none; }
   @media (max-width: 720px) {
