@@ -16,6 +16,8 @@
     --espacio-pink: #f8c3b5;
     --reflejos-accent: #1d4a56;
     --reflejos-accent-soft: #e3edf0;
+    --tandem-accent: #1e3a8a;
+    --tandem-accent-soft: #e1e6f4;
     --shadow: rgba(10, 10, 10, 0.18);
   }
   :root[data-theme="dark"] {
@@ -36,6 +38,8 @@
     --espacio-pink: #f8c3b5;
     --reflejos-accent: #8fc4d1;
     --reflejos-accent-soft: #17282c;
+    --tandem-accent: #90a8e0;
+    --tandem-accent-soft: #1b2236;
     --shadow: rgba(0, 0, 0, 0.55);
   }
   :root[data-theme="light"] {
@@ -56,6 +60,8 @@
     --espacio-pink: #f8c3b5;
     --reflejos-accent: #1d4a56;
     --reflejos-accent-soft: #e3edf0;
+    --tandem-accent: #1e3a8a;
+    --tandem-accent-soft: #e1e6f4;
     --shadow: rgba(10, 10, 10, 0.18);
   }
 
@@ -218,6 +224,12 @@
     border-color: var(--lego-accent);
     color: #fff;
     background: var(--lego-accent);
+  }
+  .nav-links a[href="tandem.html"]:hover,
+  .nav-links a[href="tandem.html"]:focus-visible {
+    border-color: var(--tandem-accent);
+    color: #fff;
+    background: var(--tandem-accent);
   }
   .nav-links a.current {
     border-color: var(--ink);
@@ -612,6 +624,7 @@
   #lego { --accent: var(--lego-accent); }
   #espacio { --accent: var(--espacio-accent); }
   #reflejos { --accent: var(--reflejos-accent); }
+  #tandem { --accent: var(--tandem-accent); }
   .tag {
     display: inline-block;
     font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
@@ -811,6 +824,8 @@
   .project-card.espacio .card-media { aspect-ratio: 600 / 954; }
   .project-card.reflejos { --accent: var(--reflejos-accent); }
   .project-card.reflejos .card-media { aspect-ratio: 851 / 1513; }
+  .project-card.tandem { --accent: var(--tandem-accent); }
+  .project-card.tandem .card-media { aspect-ratio: 1 / 1; }
 
   /* ---- custom cursor ---- */
   @media (hover: hover) and (pointer: fine) {
