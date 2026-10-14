@@ -625,6 +625,7 @@
   #espacio { --accent: var(--espacio-accent); }
   #reflejos { --accent: var(--reflejos-accent); }
   #tandem { --accent: var(--tandem-accent); }
+  .offer-card.tandem-offer { --accent: var(--tandem-accent); border-color: var(--tandem-accent); }
   .tag {
     display: inline-block;
     font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
